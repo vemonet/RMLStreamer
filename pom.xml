@@ -388,13 +388,12 @@ SOFTWARE.
                             </transformers>
                             <!-- If you want to use ./bin/flink run <quickstart jar> uncomment the following lines.
                             This will add a Main-Class entry to the manifest file -->
-                            <!--
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>framework.StreamingJob</mainClass>
+                                    <!-- <mainClass>io.rml.framework.Main</mainClass> -->
                                 </transformer>
                             </transformers>
-                            -->
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
